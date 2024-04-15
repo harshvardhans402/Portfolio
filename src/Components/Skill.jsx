@@ -42,11 +42,9 @@ const Skill = () => {
                     {Object.keys(logos).map((key, index) => (
                         <Card sx={{
                             position: 'relative',
-                            maxWidth: '150px',
-                            maxHeight: '150px',
+
                             borderRadius: '80%',
-                            margin: '45px',
-                            // padding: '40px',
+
                             textAlign: 'center',
                             backgroundColor: 'rgba(220, 220, 220)'
                         }} className="custom-card">
@@ -59,7 +57,29 @@ const Skill = () => {
 
                 </Grid>
                 <div>
+
                     <Grid container spacing={0} style={{ justifyContent: 'center' }}>
+                        <Card className="custom-workcard"
+                            sx={{
+
+                                position: 'relative',
+                                maxWidth: '270px',
+                                maxHeight: '317px',
+                                borderRadius: '8px',
+                                textAlign: 'center',
+                                backgroundColor: 'rgba(255, 255, 255)',
+                                padding: '0px',
+
+
+                            }}>
+                            <CardContent >
+                                <img src={e2elogo} alt="" height={220} width={240} style={{ padding: '0px', margin: '0px', borderRadius: '8px' }} />
+                                <Typography variant="h6" component="div" style={{}}>
+                                    <span style={{ fontWeight: 'bold', fontSize: "11px" }}>Bootcamp Organised by e2ehiring </span>    </Typography>
+                                <Typography style={{ fontSize: '12px' }}>React and Spring Fusion bootcamp for entrepreneurial application  </Typography>
+
+                            </CardContent>
+                        </Card>
                         <Card sx={{
                             position: 'relative',
                             maxWidth: '300px',
@@ -116,7 +136,7 @@ const Skill = () => {
 
                 </div>
             </motion.div >
-            <Links />
+          
         </div >
     );
 }

@@ -63,7 +63,7 @@
 }
 */
 .custom-card {
-  margin: 50px;
+  margin: 30px;
 }
 
 
@@ -109,21 +109,28 @@
 .Home {
   background-color: #ffecec;
   padding: 105px;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
 }
 
 .Education {
 
   background-color: #eeeeee;
   padding: 120px;
-
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
 }
 
 .Skill {
   background-color: #ffffff;
-  padding: 120px;
-  /* margin: 50px; */
-
-
+  padding-top: 120px;
+  /* padding-bottom: 120px; */
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
   /* place-content: center; */
 }
 

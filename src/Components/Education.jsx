@@ -39,12 +39,12 @@ const BackgroundVideoCard = ({ Course, score, link, logo, video }) => {
             }}
         >
 
-            <CardContent style={{ paddingBottom: '0px' }} >
+            <CardContent style={{ padding: '8px', placeContent: 'center' }} >
 
                 <a href={link} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
                     <img src={logo} alt="" height={50} style={{ marginBottom: '10px' }} />
                 </a>
-                <Typography variant="h6" component="div">
+                <Typography variant="" component="div">
                     {Course}
                     {console.log(Course)}
                 </Typography>
@@ -61,8 +61,8 @@ const BackgroundVideoCard = ({ Course, score, link, logo, video }) => {
                         playsInline
                         style={{
                             position: 'relative',
-                            width: '400px',
-                            height: '200px',
+                            width: '300px',
+                            height: '150px',
                             objectFit: 'cover',
 
                         }}

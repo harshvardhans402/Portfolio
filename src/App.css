@@ -1,0 +1,202 @@
+.foldit-myname {
+  font-family: "Foldit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-size: 30px;
+  font-style: normal;
+  /* opacity: 100%; */
+
+}
+
+
+
+
+
+
+/* CSS */
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* opacity: 100%; */
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+
+
+/* .mynav {
+
+  /* opacity: 100%; 
+}
+*/
+.custom-card {
+  margin: 50px;
+}
+
+
+.custom-card:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+  /* Scale the card on hover */
+}
+
+.contact-card {
+
+  margin: 50px;
+  background-color: rgb(255, 238, 241);
+  border-radius: 20px;
+
+
+
+}
+
+.contact-card:hover {
+  transition: transform 1s ease;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5); */
+  /* Scale the card on hover */
+}
+
+
+.custom-workcard {
+  margin: 50px;
+
+}
+
+.custom-workcard:hover {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+
+
+.Home {
+  background-color: #ffecec;
+  padding: 105px;
+}
+
+.Education {
+
+  background-color: #eeeeee;
+  padding: 120px;
+
+}
+
+.Skill {
+  background-color: #ffffff;
+  padding: 120px;
+  /* margin: 50px; */
+
+
+  /* place-content: center; */
+}
+
+.Work {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 120px;
+  place-content: center;
+  background-color: #c0c0ff;
+  /* margin: auto; */
+  /* width: ; */
+
+}
+
+.Contact {
+
+  background-color: #eeeeee;
+  padding: 120px;
+
+}
+
+span {
+  margin: 10px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+
+
+}
+
+.bgforpro {
+  background-color: #dcdcdc;
+  border-radius: 100%;
+  height: 300px;
+  width: 300px;
+
+}
+
+
+
+
+
+#contner {
+  display: grid;
+  align-items: center;
+  position: relative;
+  place-content: center;
+  border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  animation: spin 6s var(--d, 0s) linear infinite;
+  position: absolute;
+  margin: 45%;
+  transform-origin: center bottom;
+  transform: rotate(0) translate(250px) rotate(0);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn) translate(250px) rotate(-1turn);
+
+  }
+}

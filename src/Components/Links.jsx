@@ -1,17 +1,17 @@
 import React from 'react';
-import { BsInstagram, BsLinkedin, BsGithub } from 'react-icons/bs';
+import { BsInstagram, BsLinkedin, BsGithub, BsFacebook } from 'react-icons/bs';
 // import { FaFacebookF } from 'react-icons/fa';
 
 const Links = () => (
-    <div className="app__social">
+    <div className="" style={{ paddingLeft: '2%     ', paddingBottom: '40px' }}>
         <div>
-            <a href="https://www.linkedin.com/in/manish-patodiya" target='_blank'><BsLinkedin /></a>
+            <a href="https://www.linkedin.com/in/harshvardhan-sharma-a11399260" target='_blank'><BsLinkedin /></a>
         </div>
         <div>
-            <a href="https://github.com/manish-patodiya" target='_blank'><BsGithub /></a>
+            <a href="https://github.com/harshvardhans402" target='_blank'><BsGithub /></a>
         </div>
         <div>
-            <a href="https://www.instagram.com/manish_patodiya__/" target='_blank'><BsInstagram /></a>
+            <a href="https://www.facebook.com/profile.php?id=100010741020727/" target='_blank'><BsFacebook /></a>
         </div>
     </div>
 );

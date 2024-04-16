@@ -7,6 +7,7 @@ import cmr from './photo/cmrlogo.png';
 import cmrv from './photo/CMRIT.mp4';
 import podarv from './photo/podarv.mp4';
 import { motion } from 'framer-motion';
+import Links from "./Links";
 
 const edu = [
     {
@@ -74,36 +75,38 @@ const BackgroundVideoCard = ({ Course, score, link, logo, video }) => {
     );
 };
 
-export default function Education() {
+export default function Education() {   
     return (
+        <div style={{ backgroundColor: '#8f8f8f' }}>
+            <div className='Education'>
+                <motion.div
 
-        <div className='Education'>
-            <motion.div
+                    whileInView={{ y: [10, 50, 1], opacity: [0, 0, 1] }}
+                    transition={{ duration: 0.5 }}
+                >
+                    <div className='' style={{ margin: '50px', textAlign: 'center' }}>
+                        <h2  > <span style={{ color: 'Blue' }}>EDUCATED</span>  <span style={{ color: '#ffc107' }}>AGITATED</span> <span style={{ color: '#fd7e14' }}>ORGANISED</span></h2>
+                    </div>
 
-                whileInView={{ y: [10, 50, 1], opacity: [0, 0, 1] }}
-                transition={{ duration: 0.5 }}
-            >
-                <div className='center' style={{ marginBottom: '100px' }}>
-                    <h2  > <span style={{ color: 'Blue' }}>EDUCATED</span>  <span style={{ color: '#ffc107' }}>AGITATED</span> <span style={{ color: '#fd7e14' }}>ORGANISED</span></h2>
-                </div>
-
-                <Grid container spacing={2} style={{ justifyContent: 'center' }}>
-                    {edu.map((college, index) => (
-
-
-                        <div className='custom-card' key={index}  >
-
-                            <BackgroundVideoCard {...college} />
-                        </div>
+                    <Grid container spacing={2} style={{ justifyContent: 'center' }}>
+                        {edu.map((college, index) => (
 
 
+                            <div className='education-card' key={index}  >
+
+                                <BackgroundVideoCard {...college} />
+                            </div>
 
 
 
-                    ))}
-                </Grid>
 
-            </motion.div>
+
+                        ))}
+                    </Grid>
+
+                </motion.div>
+            </div>
+            <Links />
         </div>
 
     );

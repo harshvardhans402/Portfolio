@@ -8,8 +8,8 @@ import csslogo from '../assets/csslogo.png';
 import htmllogo from '../assets/htmllogo.png';
 import nodelogo from '../assets/nodelogo.png';
 import reactlogo from '../assets/reactlogo.png';
+import { TypeAnimation } from 'react-type-animation'
 
-// Define an object with all the logos
 const logos = {
     javalogo,
     pythonlogo,
@@ -22,24 +22,22 @@ const logos = {
 
 const Home = () => {
     return (
-        <div className='Home'>
-            <Grid container spacing={1} style={{ justifyContent: 'center' }}>
-                <div id='contner'>
-                    <div className='bgforpro' style={{ margin: '30px' }}>
-                        <h3 className='center' style={{ paddingTop: '15px' }}>Welcome to my portfolio!</h3>
-                        <img src={pro} alt="" height={200} width={200} style={{ margin: '50px', borderRadius: '70%' }} />
-                    </div>
-                    {/* Map over the logos object to render the logos and divisions */}
-                    {Object.keys(logos).map((key, index) => (
-                        <div className="item" style={{ '--d': `-${index}s` }} key={key}>
-                            <img src={logos[key]} alt="" height={50} width={50} style={{}} />
-                        </div>
-                    ))}
+        < div style={{  margin: '0px', padding: '0px' }}>
+
+            <div className='Home ' style={{}}>
+
+                <div className='intro' style={{ float: 'right', position: 'relative ' }}>
+                    <h1 className='' style={{ padding: '4%', color: 'white' }}>
+                        < TypeAnimation sequence={['Hello! I am Harshvardhan Sharma', 1, 'Hello! I am Harshvardhan Sharma']}  ></TypeAnimation >
+                    </h1>
+                    <p className=' ' style={{ fontSize: '25px', padding: '2%', color: 'grey' }}>a full-stack web developer on a mission to sculpt digital experiences that captivate and inspire. Step into my world, where code meets creativity, and explore the dynamic fusion of design, functionality, and innovation that defines my work.</p>
                 </div>
-                <div className='center'>
-                    <h1 style={{}}>Full Stack Web Developer</h1>
-                </div>
-            </Grid>
+
+
+
+
+            </div >
+
         </div>
     );
 };

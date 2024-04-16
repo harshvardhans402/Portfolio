@@ -90,8 +90,8 @@ const Skill = () => {
                         }} className="custom-card">
                             <CardContent>
                                 <img src={accubitslogo} height={'200px'} />
-                                <span style={{ fontWeight: 'bold', fontSize: "15px" }}>Workshop Organised by Accubits Technologies </span>
-                                <Typography style={{ fontSize: '12px', marginTop: '10px' }}>Mastering the art of Real World Penetration Testing  </Typography>
+                                <span style={{ fontWeight: 'bold', fontSize: "15px", margin: 0 }}>Workshop Organised by Accubits Technologies </span>
+                                <Typography style={{ fontSize: '12px', marginTop: '5px' }}>Mastering the art of Real World Penetration Testing  </Typography>
                             </CardContent>
                         </Card>
                         <Card sx={{
@@ -108,8 +108,8 @@ const Skill = () => {
                             <CardContent>
                                 <img src={Nullclasslogo} height={'200px'} />
                                 <span style={{ fontWeight: 'bold', fontSize: "15px" }}>Internship at NULLCLASS (Nov 2023) </span>
-                                <Typography style={{ fontSize: '12px', marginTop: '10px' }}>Duration: 3 Months </Typography>
-                                <Typography style={{ fontSize: '12px', marginTop: '10px', fontWeight: 'bold' }}>MERN Stack  </Typography>
+                                <Typography style={{ fontSize: '12px', marginTop: '5px' }}>Duration: 3 Months </Typography>
+                                <Typography style={{ fontSize: '12px', marginTop: '5px', fontWeight: 'bold' }}>MERN Stack  </Typography>
                             </CardContent>
                         </Card>
                     </Grid>
